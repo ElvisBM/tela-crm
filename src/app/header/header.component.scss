@@ -1,0 +1,42 @@
+select{
+  border-radius:0px;
+  background: none;
+  padding: 10px;
+   &:not([multiple]) {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-position: right 50%;
+    background-repeat: no-repeat;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAABeElEQVRIid3WP0sDMRzG8W+Lg7ODSHFwKCLOwbUEZxEXEcVFBXFwy2TFRSoIeQE66OKfwcXVRUIXB8ksDg5OHXwFRaR1MMJZkjTpcIOBG/K7u3zuSXLcVfr0KaNVS1HKhMYGC1LbA2AfWDRKvOQOKLXdAU6BJaPE02+9OnDRAtACpgAjtZ0fATkHJoD74rk/kFHiGbh03ckcrIBUgS9+ZsUPOWw7F/MgG0aJuyiUi6UgAJXYeyS1vQC2XPcDaBglXnORYKJIsrbUdi4X8SaS2s4Cq8CJUaIXSHYGHPoQqW0N2ANaRomuN5HUdhpoA8fAjdS2Gkh2FEHa7iHC2xvouQNgDbgKYESQemEsP2SU6AANoONK6wFsGPIArBTH9u46qW3d3VhzpVtgs7BmM0aJ9wiybJT4HAqlYDkIRLa3UeKNyDTmINFEkWTXQBN4TEWSoADWBcZTkWQogCUjkPGF9axZMgIZiX6bS7YLNFORkaBR2//7CyoN+gbuoORHB32x9QAAAABJRU5ErkJggg==);
+    padding: .5em;
+    padding-right: 1.5em
+  }
+}
+#grupoEconomico{
+  select{
+    border: 1px solid #408ccb;
+  }
+}
+#usario{
+	background: #002035;
+  color: #fff;
+  select{
+    border: 0px;
+    color: #fff;
+  }
+}
+#notificacao{
+  background: #408ccb;
+  text-align:center;
+  padding: 10px;
+  label{
+    background: #f00c10;
+    color: #fff;
+    padding: 1px 6px;
+    border-radius: 50px;
+    position: relative;
+    left: -10px;
+    top: -6px;
+    font-size: 0.8rem;
+  }
+}
