@@ -2,16 +2,13 @@
 	<input type="text" placeholder="Pesquise aqui" />
 </div>
 <nav id="menu" class="nav flex-column">
-	<a href="#" class="nav-link active">
-    <img src="assets/images/icon-globo2.png">
-    Painel de Gestão
-  </a>
-	<a href="#" class="nav-link">
-    <img src="assets/images/icon-digital.png">
-    Conta Digital
-  </a>
-	<a href="#" class="nav-link submenu">
-    <img src="assets/images/icon-recebiveis.png">
-    Ant. de Recebíveis
+  <a
+    *ngFor="let menu of menuList; let i = index"
+    class="nav-link
+      {{menu.submenu ? 'submenu' : '' }}
+      {{menu.active ? 'active' : '' }}"
+  >
+    <img src="assets/images/{{menu.icon}}">
+    {{menu.menu}}
   </a>
 </nav>
