@@ -1,3 +1,9 @@
-<p>
-  list-coins works!
-</p>
+<div class="container-fluid">
+  <h3>BlockChain Existentes</h3>
+  <input text="text" placeholder="Buscar" />
+  <ul>
+    <li  *ngFor="let coin of listCoins; let i = index">
+      {{coin.name}}
+    </li>
+  </ul>
+</div>
