@@ -7,7 +7,7 @@ import { MENU } from './../menu/menulist';
   styleUrls: ['./sidebar.component.scss']
 })
 export class SidebarComponent {
-  menuList: Array<string> = MENU;
+  menuList = MENU;
 
   constructor() { }
 }
