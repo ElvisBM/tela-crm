@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { HeaderComponent } from './header/header.component';
 import { InfocontentsComponent } from './infocontents/infocontents.component';
+import { ListCoinsComponent } from './list-coins/list-coins.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SidebarComponent,
     HeaderComponent,
-    InfocontentsComponent
+    InfocontentsComponent,
+    ListCoinsComponent
   ],
   imports: [
     BrowserModule,
