@@ -1,9 +1,28 @@
-<div class="container-fluid">
-  <h3>BlockChain Existentes</h3>
-  <input text="text" placeholder="Buscar" />
-  <ul>
-    <li  *ngFor="let coin of listCoins; let i = index">
-      {{coin.name}}
-    </li>
-  </ul>
-</div>
+<header class="container-fluid">
+	<div id="breadcrumbs" class="row">
+		<a href="#">Páginal Inicial</a> > <span>BlockChain Existente</span>
+	</div>
+	<div id="header" class="row">
+		<div id="title" class="col-8">
+			<img src="assets/images/icon-blockchain.png">
+			<h3>BlockChain Existente</h3>
+		</div>
+	</div>
+</header>
+<section class="container-fluid">
+  <aside>
+    <input text="text" placeholder="Buscar" name="searchCoin" />
+    <div id="tabela">
+    <table>
+      <tr>
+        <th>Nome</th>
+        <th>Preço em Dólar</th>
+      </tr>
+      <tr *ngFor="let coin of listCoins;">
+        <td>{{coin.name}}</td>
+        <td>{{coin.price_usd}}</td>
+      </tr>
+    </table>
+  </div>
+  </aside>
+</section>
