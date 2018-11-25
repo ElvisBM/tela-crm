@@ -4,7 +4,7 @@ import { InfocontentsComponent } from './infocontents/infocontents.component';
 
 const rotasApp: Routes = [
   {path: '', component: InfocontentsComponent},
-  {path: 'blockchain', component: ListCoinsComponent}
+  {path: 'blockchain', component: ListCoinsComponent},
   {path: '**', redirectTo: ''}
 ];
 
