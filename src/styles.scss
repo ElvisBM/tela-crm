@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+html, body {
+  box-sizing: border-box;
+  height: 100%;
+  margin: 0;
+}
+
+select{
+  border-radius:0px;
+  background: none;
+  padding: 10px;
+  cursor: pointer;
+   &:not([multiple]) {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-position: right 50%;
+    background-repeat: no-repeat;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAABeElEQVRIid3WP0sDMRzG8W+Lg7ODSHFwKCLOwbUEZxEXEcVFBXFwy2TFRSoIeQE66OKfwcXVRUIXB8ksDg5OHXwFRaR1MMJZkjTpcIOBG/K7u3zuSXLcVfr0KaNVS1HKhMYGC1LbA2AfWDRKvOQOKLXdAU6BJaPE02+9OnDRAtACpgAjtZ0fATkHJoD74rk/kFHiGbh03ckcrIBUgS9+ZsUPOWw7F/MgG0aJuyiUi6UgAJXYeyS1vQC2XPcDaBglXnORYKJIsrbUdi4X8SaS2s4Cq8CJUaIXSHYGHPoQqW0N2ANaRomuN5HUdhpoA8fAjdS2Gkh2FEHa7iHC2xvouQNgDbgKYESQemEsP2SU6AANoONK6wFsGPIArBTH9u46qW3d3VhzpVtgs7BmM0aJ9wiybJT4HAqlYDkIRLa3UeKNyDTmINFEkWTXQBN4TEWSoADWBcZTkWQogCUjkPGF9axZMgIZiX6bS7YLNFORkaBR2//7CyoN+gbuoORHB32x9QAAAABJRU5ErkJggg==);
+    padding: .5em;
+    padding-right: 1.5em
+  }
+}
