@@ -11,14 +11,14 @@
 </header>
 <section class="container-fluid">
   <aside>
-    <input text="text" placeholder="Buscar" name="searchCoin" />
+    <input text="text" placeholder="Buscar" [(ngModel)]="searchText" />
     <div id="tabela">
     <table>
       <tr>
         <th>Nome</th>
         <th>Preço em Dólar</th>
       </tr>
-      <tr *ngFor="let coin of listCoins;">
+      <tr *ngFor="let coin of listCoins | filter : 'name' : searchText">
         <td>{{coin.name}}</td>
         <td>{{coin.price_usd}}</td>
       </tr>
