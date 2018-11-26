@@ -8,7 +8,7 @@ import { HttpClient } from "@angular/common/http";
   host: {class:'container-fluid'}
 })
 export class ListCoinsComponent implements OnInit{
-  listCoins: Array<string> = [];
+  listCoins: String[] = [];
   constructor(private conexaoApi: HttpClient) {}
 
   ngOnInit(): void {
