@@ -1,9 +1,9 @@
 <div id="search" class="form-group">
-	<input type="text" placeholder="Pesquise aqui" />
+	<input type="text" placeholder="Pesquise aqui"  [(ngModel)]="searchMenu" />
 </div>
 <nav id="menu" class="nav flex-column">
   <a
-    *ngFor="let menu of menuList; let i = index"
+    *ngFor="let menu of menuList | filter : 'menu' : searchMenu"
     routerLink="/{{menu.rota}}"
     class="nav-link
       {{menu.submenu ? 'submenu' : '' }}
